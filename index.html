@@ -1,0 +1,149 @@
+<!doctype html>
+
+<html lang="ko">
+
+ <head>
+  <meta charset="UTF-8">
+  <title>IT'S YOONJIYOUNG</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+	<style>
+		.clearfix::after{
+			content : "";
+			display :block;
+			clear : both;
+		}
+		*{
+			margin : 0;
+			padding:  0;
+		}
+		.inner{
+			width : 1140px;
+			margin : auto;
+			position : relative;
+			height : 100%;
+		}
+		header{
+			background-color : white;
+			height : 80px;
+		}
+		header:hover{
+			background-color : #5f91dd;
+		}
+		header .logo{
+			position : absolute;
+			top : 50%;
+			transform : translate(0, -50%);
+		}
+		header .logo img{
+			height : 60px;
+		}
+		header .gnb{
+			position : absolute;
+			right : 0;
+			list-style-type : none;
+			top : 50%;
+			transform : translate(0, -50%);
+			font-family: 'Secular One', sans-serif;
+			font-size : 18px;
+			font-weight : 700;
+			letter-spacing : 2px;
+		}
+		header .gnb li{
+			float : left;
+			height : 100%;
+			padding : 0 15px;
+		}
+		header:hover .gnb{
+			color : white;
+		}
+		header .gnb li:hover{
+			cursor : pointer;
+		}
+		#content{
+			height : 940px;
+			background-color : black;
+			position : relative;
+			text-align : center;
+		}
+		footer{
+			background-color : #091626;
+			height : 176px;
+		}
+		.sns{
+			padding : 20px 0;
+			position : absolute;
+			left : 50%;
+			transform :translate(-50%);
+		}
+		.sns ul{
+			list-style-type : none;
+		}
+		.sns ul li{
+			float : left;
+			font-size : 24px;
+			color : white;
+			width : 30px;
+			height : 30px;
+			text-align : center;
+			margin : 6px 6px;
+			padding :10px;
+		}
+		.sns ul li:hover{
+			background-color : #94c1ff;
+			cursor : pointer;
+			border-radius : 50%;
+		}
+		.copyright{
+			color : white;
+			text-align : center;
+		}
+		
+	</style>
+ </head>
+
+ <body>
+  <div id="wrap">
+		<header id="header">
+			<div class="inner">
+				<!--logo -->
+				<div class="logo">
+					<img src="img/logo2.png">
+				</div>
+				
+				<!--gnb-->
+					<ul class="gnb">
+						<li>About</li>
+						<li>Album/Ticket</li>
+						<li>Video</li>
+						<li>Community</li>
+					</ul>
+			</div>
+		</header>
+		<!--content -->
+		<div id="content">
+			<div class="thumnail_video">
+				<iframe width="1656" height="932" src="https://www.youtube.com/embed/9C2P91ENnlM?autoplay=1&mute=1;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+		
+		<!--footer-->
+		<footer id="footer">
+			<div class="inner">
+				<div class="sns clearfix">
+					<ul>
+						<li><i class="fa fa-facebook-f"></i></li>
+						<li><i class="fa fa-instagram"></i></li>
+						<li><i class="fa fa-youtube-play"></i></li>
+					</ul>
+				</div>
+				<div class="copyright">
+				&copy ALL RIGHTS RESERVED</div>
+			</div>
+	</div>
+ </body>
+
+</html>
